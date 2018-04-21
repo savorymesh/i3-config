@@ -1,0 +1,64 @@
+! URxvt
+
+! General settings
+URxvt.saveLines: 2000
+URxvt.scrollBar: False
+URxvt.scrollstyle: rxvt
+URxvt.termName: xterm-256color
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: False
+
+! Perl extensions 
+URxvt.perl-ext-common: default,clipboard,matcher,keyboard-select
+
+! URLs
+URxvt.url-launcher: /usr/bin/firefox -new-tab
+URxvt.underlineURLs: True
+URxvt.matcher.button: 1
+
+! Copy-Paste
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste
+URxvt.keysym.C-A-V: perl:clipboard:paste_escape
+
+! Turn off Unicode paste mode
+URxvt.iso14755 : false
+
+! Fonts
+URxvt.font: xft:Hack:pixelsize=14:antialias=true
+URxvt.boldFont: xft:Hack:Bold:pixelsize=14:antialias=true
+
+! Fake transparency
+urxvt*transparent: true
+urxvt*shading: 20
+
+*background: #1c1b1a
+*foreground: #f8f6f2
+*cursorColor: #aeee00
+*scrollColor: #45413b
+*fadeColor: #ffffff
+*fading: 20
+
+! black
+*color0: #141413
+*color8: #000000
+! red
+*color1: #ff2c4b
+*color9: #ff2c4b
+! green
+*color2: #aeee00
+*color10: #aeee00
+! yellow
+*color3: #fade3e
+*color11: #ffa724
+! blue
+*color4: #0a9dff
+*color12: #0a9dff
+! magenta
+*color5: #ff9eb8
+*color13: #ff9eb8
+! cyan
+*color6: #8cffba
+*color14: #8cffba
+! white
+*color7: #d9cec3
